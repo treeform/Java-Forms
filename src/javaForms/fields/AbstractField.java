@@ -5,21 +5,21 @@ public class AbstractField implements Field {
 	private final static String HTML = "<input name='%s' value='%s'>";
 	private String name;
 	private Object value;
-	
-	public AbstractField(String name, String value){
+
+	public AbstractField(String name, String value) {
 		this.name = name;
 		this.value = value;
 	}
-	
+
 	@Override
 	public String getName() {
-		
+
 		return name;
 	}
 
 	@Override
 	public Object getValue() {
-		
+
 		return value;
 	}
 
@@ -30,8 +30,8 @@ public class AbstractField implements Field {
 
 	@Override
 	public Object setValue() {
-		
+
 		return name;
 	}
-	
+
 }
